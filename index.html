@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блок Progress</title>
+    <link rel="stylesheet" href="./src/styles/index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">Progress</div>
+            <div class="progress">
+                <div class="progress-value"></div>
+            </div>
+    </div>
+    <div class="container">
+            <div class="value-button" style="margin: 15px auto; display: flex; justify-content: space-around; align-items: center;">
+                <input type="number" id="value-number" class="value-text">
+                <span style="margin: auto">Value</span>
+            </div>
+
+            <div class="value-button" style="margin: 15px auto; display: flex; justify-content: space-around; align-items: center;">
+                <label class="switch">
+                    <input id="animateCheck" type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                <span style="margin: auto 20px">Animate</span>
+            </div>
+            <div class="value-button" style="margin: 15px auto; display: flex; justify-content: space-around; align-items: center;">
+                <label class="switch">
+                    <input id="hideCheck" type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                <span style="margin: auto;">Hide</span>
+            </div>
+        </div>
+    </div>
+</body>
+<script src='index.js'></script>
