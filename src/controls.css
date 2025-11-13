@@ -1,0 +1,76 @@
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.value-text {
+    width: var(--control-width);
+    height: var(--control-height);
+    border-radius: var(--control-height);
+    text-align: center;
+    border: 1px solid var(--neutral-color);
+    outline: none;
+}
+
+.value-text:focus {
+    border-color: var(--primary-color);
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: var(--control-width);
+    height: var(--control-height);
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--neutral-color);
+    transition: var(--transition-duration);
+}
+
+.slider::before {
+    position: absolute;
+    content: "";
+    height: 1.625rem;
+    width: 1.625rem;
+    left: 0.25rem;
+    bottom: 0.25rem;
+    background-color: var(--bg-color);
+    transition: var(--transition-duration);
+}
+
+.switch input:checked + .slider {
+    background-color: var(--primary-color);
+}
+
+.switch input:focus + .slider {
+    box-shadow: 0 0 1px var(--primary-color);
+}
+
+.switch input:checked + .slider::before {
+    transform: translateX(1.625rem);
+}
+
+.slider.round {
+    border-radius: var(--control-height);
+}
+
+.slider.round::before {
+    border-radius: 50%;
+}
+

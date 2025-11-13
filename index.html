@@ -9,31 +9,30 @@
 <body>
     <div class="container">
         <div class="title">Progress</div>
-            <div class="progress">
-                <div class="progress-value"></div>
-            </div>
-    </div>
-    <div class="container">
-            <div class="value-button" style="margin: 15px auto; display: flex; justify-content: space-around; align-items: center;">
-                <input type="number" id="value-number" class="value-text">
-                <span style="margin: auto">Value</span>
-            </div>
-
-            <div class="value-button" style="margin: 15px auto; display: flex; justify-content: space-around; align-items: center;">
-                <label class="switch">
-                    <input id="animateCheck" type="checkbox">
-                    <span class="slider round"></span>
-                </label>
-                <span style="margin: auto 20px">Animate</span>
-            </div>
-            <div class="value-button" style="margin: 15px auto; display: flex; justify-content: space-around; align-items: center;">
-                <label class="switch">
-                    <input id="hideCheck" type="checkbox">
-                    <span class="slider round"></span>
-                </label>
-                <span style="margin: auto;">Hide</span>
-            </div>
+        <div class="progress" id="progress">
+            <div class="progress-value" id="progress-value"></div>
         </div>
     </div>
+    <div class="container">
+        <div class="control-group">
+            <input type="number" id="value-number" class="value-text" min="0" max="100">
+            <span class="control-label--centered">Value</span>
+        </div>
+        <div class="control-group">
+            <label class="switch">
+                <input id="animateCheck" type="checkbox">
+                <span class="slider round"></span>
+            </label>
+            <span class="control-label">Animate</span>
+        </div>
+        <div class="control-group">
+            <label class="switch">
+                <input id="hideCheck" type="checkbox">
+                <span class="slider round"></span>
+            </label>
+            <span class="control-label--centered">Hide</span>
+        </div>
+    </div>
+    <script type="module" src='index.js'></script>
 </body>
-<script src='index.js'></script>
+</html>

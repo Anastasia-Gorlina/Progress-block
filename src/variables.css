@@ -1,0 +1,13 @@
+:root {
+    --primary-color: #2150fc;
+    --secondary-color: #ededed;
+    --neutral-color: #e0e6ef;
+    --bg-color: #fff;
+    --progress-size: 12.5rem;
+    --progress-inner-size: 10rem;
+    --control-height: 2.125rem;
+    --control-width: 3.75rem;
+    --animation-duration: 2s;
+    --transition-duration: 0.4s;
+}
+
